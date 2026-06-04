@@ -1,0 +1,38 @@
+# XcodeGen spec for the Mac App Store build of Clipdon.
+# Generate the project with:  xcodegen generate
+# (project.yml is the source of truth; Clipdon.xcodeproj is regenerable.)
+name: Clipdon
+options:
+  bundleIdPrefix: org.nexaspark
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+
+settings:
+  base:
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    SWIFT_VERSION: "5.0"
+    # Your Apple Developer Team ID. Required for App Store / signed builds.
+    # Replace with your own (Xcode ▸ Settings ▸ Accounts shows it).
+    DEVELOPMENT_TEAM: "YOUR_TEAM_ID"
+    CODE_SIGN_STYLE: Automatic
+
+targets:
+  Clipdon:
+    type: application
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources:
+      - Sources/Clipdon
+      - Assets.xcassets
+    settings:
+      base:
+        PRODUCT_NAME: Clipdon
+        PRODUCT_BUNDLE_IDENTIFIER: org.nexaspark.clipdon
+        INFOPLIST_FILE: Clipdon-Info.plist
+        GENERATE_INFOPLIST_FILE: "NO"
+        CODE_SIGN_ENTITLEMENTS: Clipdon.entitlements
+        ENABLE_HARDENED_RUNTIME: "YES"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        COMBINE_HIDPI_IMAGES: "YES"
