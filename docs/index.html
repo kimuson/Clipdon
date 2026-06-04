@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clipdon — Legal</title>
+<style>
+  :root { --accent: #4a4fd4; --ink: #1d1d1f; --muted: #6b6b70; --line: #e6e6ec; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; color: var(--ink);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #fff;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 64px 24px 96px; }
+  .brand { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+  .brand h1 { margin: 0; font-size: 34px; letter-spacing: -0.02em; }
+  .logo {
+    width: 52px; height: 52px; border-radius: 13px; flex: none;
+    background: linear-gradient(160deg, #6e8ff3, #4a4fd4);
+  }
+  .tagline { color: var(--muted); margin: 0 0 40px; }
+  .cards { display: grid; gap: 16px; }
+  a.card {
+    display: block; text-decoration: none; color: inherit;
+    border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px;
+    transition: border-color .15s ease, transform .15s ease;
+  }
+  a.card:hover { border-color: var(--accent); transform: translateY(-1px); }
+  a.card h2 { margin: 0 0 4px; font-size: 18px; }
+  a.card p { margin: 0; color: var(--muted); font-size: 14px; }
+  .foot { margin-top: 48px; color: var(--muted); font-size: 14px; }
+  .foot a { color: var(--accent); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">
+      <div class="logo"></div>
+      <h1>Clipdon</h1>
+    </div>
+    <p class="tagline">A fast, lightweight clipboard-history manager for the Mac menu bar.</p>
+
+    <div class="cards">
+      <a class="card" href="privacy.html">
+        <h2>Privacy Policy →</h2>
+        <p>What Clipdon stores, and why it never leaves your Mac.</p>
+      </a>
+      <a class="card" href="terms.html">
+        <h2>Terms of Use →</h2>
+        <p>The terms that apply when you use the app.</p>
+      </a>
+    </div>
+
+    <p class="foot">
+      Source code: <a href="https://github.com/kimuson/Clipdon">github.com/kimuson/Clipdon</a><br>
+      © 2026 NexaSpark
+    </p>
+  </div>
+</body>
+</html>
