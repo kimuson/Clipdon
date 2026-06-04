@@ -5,6 +5,10 @@ Anything you copy with `⌘C` is saved to your history automatically. Press
 `⌘⇧V` to bring up a popup **right at your mouse cursor**, where you can search
 and re-copy past items.
 
+<p align="center">
+  <img src="store-assets/screenshots/01-history.png" alt="Clipdon — recall everything you've copied" width="760">
+</p>
+
 ## Features
 
 - 📋 **Lives in the menu bar** — an agent app that keeps your Dock clean
@@ -92,3 +96,13 @@ CODESIGN_IDENTITY="Developer ID Application: Your Name (TEAMID)" ./build-app.sh
 ```
 
 See `RELEASING.md` for the full set of preparation steps.
+
+## Screenshots
+
+| Search | Keyboard | Favorites |
+|---|---|---|
+| ![Search](store-assets/screenshots/02-search.png) | ![Keyboard](store-assets/screenshots/03-keyboard.png) | ![Favorites](store-assets/screenshots/05-favorites.png) |
+
+## License
+
+[MIT](LICENSE) © 2026 NexaSpark
